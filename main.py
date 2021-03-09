@@ -1,9 +1,9 @@
 import random #import random library
-import pyttsx3
-import datetime
+import pyttsx3 #import pyttsx3 library
+import datetime #import datetime library
 
 
-engine = pyttsx3.init()
+engine = pyttsx3.init() #engine talking
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)  # voice id [1] for female, [0] for male voice
 engine.runAndWait()
@@ -34,6 +34,8 @@ teamNasir = ["who is nasir", "nasir?", "about nasir"]
 teamHasan = ["who is hasan", "hasan?", "about hasan"]
 
 ofcGraphicTeam = ["team of pakone shop", "pakoneshop team", "team pakoneshop", "marketing team" , "advertising team", "creation team"]
+# List End...
+
 
 #create loop for continue program works.
 while True:
@@ -44,7 +46,7 @@ while True:
 
     elif a.lower() in thank: # condition and convert command into lower case
         print('Bots Said - | Your Welcome |' '\n')  # bots print team directory on screen
-        engine.say('| Your Welcome |')
+        engine.say('| Your Welcome |') #bot's Talking
         engine.runAndWait()
 
     elif a.lower() in crntTime:
@@ -68,7 +70,7 @@ while True:
         engine.runAndWait()
 
     elif a.lower() in address: # condition and convert command into lower case
-        print('Bots Said - | A-17, Ground Floor, Opposite CCA Club, Main Shahrah-e-Faisal, Karachi. 75270 |' '\n')  # bots print team directory on screen
+        print('Bots Said - | Opposite CCA Club, Main Shahrah-e-Faisal, Karachi. 75270 |' '\n')  # bots print team directory on screen
         engine.say('|Office address: A-17, Ground Floor, Opposite CCA Club, Main Shahrah-e-Faisal, Karachi. 75270 |')
         engine.runAndWait()
 
@@ -89,3 +91,6 @@ while True:
 
     elif a.lower() in ofcGraphicTeam: # condition and convert command into lower case
         print('Bots Said - | Saad Meer | Muhammad Umer | Muhammad Uzair | Hammad Niazi |' '\n') #bots print team directory on screen
+
+
+#program continue working Until press stop key of the editor.
